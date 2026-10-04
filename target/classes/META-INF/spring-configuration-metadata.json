@@ -1,0 +1,30 @@
+{
+  "groups": [
+    {
+      "name": "decision",
+      "type": "com.saurabh.stockdecision.config.DecisionProperties",
+      "sourceType": "com.saurabh.stockdecision.config.DecisionProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "decision.average-down-percent",
+      "type": "java.math.BigDecimal",
+      "sourceType": "com.saurabh.stockdecision.config.DecisionProperties"
+    },
+    {
+      "name": "decision.stop-loss-percent",
+      "type": "java.math.BigDecimal",
+      "sourceType": "com.saurabh.stockdecision.config.DecisionProperties"
+    },
+    {
+      "name": "decision.take-profit-percent",
+      "type": "java.math.BigDecimal",
+      "sourceType": "com.saurabh.stockdecision.config.DecisionProperties"
+    }
+  ],
+  "hints": [],
+  "ignored": {
+    "properties": []
+  }
+}

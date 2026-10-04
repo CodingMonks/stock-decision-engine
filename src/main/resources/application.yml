@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: stock-decision-engine
+
+server:
+  port: 8080
+
+# API key comes ONLY from the environment variable JEV_API_KEY
+jev:
+  api-key: ${JEV_API_KEY:}
+
+# Decision thresholds (percent). Override via env, e.g. DECISION_TAKE_PROFIT_PERCENT=25
+decision:
+  take-profit-percent: 20
+  stop-loss-percent: 15
+  average-down-percent: 5
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
