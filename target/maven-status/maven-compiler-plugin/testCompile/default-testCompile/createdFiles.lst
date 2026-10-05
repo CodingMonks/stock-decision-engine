@@ -1,2 +1,7 @@
-com/saurabh/stockdecision/service/DecisionServiceTest.class
 com/saurabh/stockdecision/api/DecisionControllerTest.class
+com/saurabh/stockdecision/api/DecisionControllerJevTest.class
+com/saurabh/stockdecision/jev/JevClientTest.class
+com/saurabh/stockdecision/jev/JevHttpLoggerTest.class
+com/saurabh/stockdecision/service/DecisionServiceTest.class
+com/saurabh/stockdecision/jev/JevConfigTest.class
+com/saurabh/stockdecision/security/SecretRedactorTest.class

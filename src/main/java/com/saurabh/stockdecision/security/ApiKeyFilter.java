@@ -15,7 +15,7 @@ import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 
 /**
- * Protects /api/** with an API key read from the JEV_API_KEY environment variable.
+ * Protects /api/** with an API key read from the API_KEY environment variable.
  * The application refuses to start if the variable is missing.
  */
 @Component
@@ -25,10 +25,10 @@ public class ApiKeyFilter extends OncePerRequestFilter {
 
     private final byte[] expectedKey;
 
-    public ApiKeyFilter(@Value("${jev.api-key:}") String apiKey) {
+    public ApiKeyFilter(@Value("${app.api-key:}") String apiKey) {
         if (!StringUtils.hasText(apiKey)) {
             throw new IllegalStateException(
-                    "JEV_API_KEY environment variable is not set. Export it before starting the service.");
+                    "API_KEY environment variable is not set. Export it before starting the service.");
         }
         this.expectedKey = apiKey.getBytes(StandardCharsets.UTF_8);
     }

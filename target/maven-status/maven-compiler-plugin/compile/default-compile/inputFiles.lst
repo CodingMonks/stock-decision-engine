@@ -3,8 +3,17 @@
 /Users/saurabhchakote/Local/Technoration/services/stock-decision-engine/src/main/java/com/saurabh/stockdecision/api/GlobalExceptionHandler.java
 /Users/saurabhchakote/Local/Technoration/services/stock-decision-engine/src/main/java/com/saurabh/stockdecision/config/AppConfig.java
 /Users/saurabhchakote/Local/Technoration/services/stock-decision-engine/src/main/java/com/saurabh/stockdecision/config/DecisionProperties.java
+/Users/saurabhchakote/Local/Technoration/services/stock-decision-engine/src/main/java/com/saurabh/stockdecision/config/TypeSafeProperties.java
+/Users/saurabhchakote/Local/Technoration/services/stock-decision-engine/src/main/java/com/saurabh/stockdecision/jev/JevClient.java
+/Users/saurabhchakote/Local/Technoration/services/stock-decision-engine/src/main/java/com/saurabh/stockdecision/jev/JevConfig.java
+/Users/saurabhchakote/Local/Technoration/services/stock-decision-engine/src/main/java/com/saurabh/stockdecision/jev/JevHttpLogger.java
+/Users/saurabhchakote/Local/Technoration/services/stock-decision-engine/src/main/java/com/saurabh/stockdecision/jev/JevResult.java
+/Users/saurabhchakote/Local/Technoration/services/stock-decision-engine/src/main/java/com/saurabh/stockdecision/jev/JevStartupLogger.java
 /Users/saurabhchakote/Local/Technoration/services/stock-decision-engine/src/main/java/com/saurabh/stockdecision/model/Decision.java
 /Users/saurabhchakote/Local/Technoration/services/stock-decision-engine/src/main/java/com/saurabh/stockdecision/model/DecisionRequest.java
 /Users/saurabhchakote/Local/Technoration/services/stock-decision-engine/src/main/java/com/saurabh/stockdecision/model/DecisionResponse.java
+/Users/saurabhchakote/Local/Technoration/services/stock-decision-engine/src/main/java/com/saurabh/stockdecision/model/JevError.java
+/Users/saurabhchakote/Local/Technoration/services/stock-decision-engine/src/main/java/com/saurabh/stockdecision/model/JevEvaluation.java
 /Users/saurabhchakote/Local/Technoration/services/stock-decision-engine/src/main/java/com/saurabh/stockdecision/security/ApiKeyFilter.java
+/Users/saurabhchakote/Local/Technoration/services/stock-decision-engine/src/main/java/com/saurabh/stockdecision/security/SecretRedactor.java
 /Users/saurabhchakote/Local/Technoration/services/stock-decision-engine/src/main/java/com/saurabh/stockdecision/service/DecisionService.java

@@ -64,6 +64,9 @@ public class DecisionService {
                 changePercent,
                 decision,
                 reason,
-                Instant.now(clock));
+                Instant.now(clock),
+                DecisionResponse.POWERED_BY_BASIC,
+                null,
+                null);
     }
 }

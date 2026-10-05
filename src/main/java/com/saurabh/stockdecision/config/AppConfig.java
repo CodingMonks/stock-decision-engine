@@ -22,13 +22,13 @@ public class AppConfig {
 
     @Bean
     public OpenAPI openAPI() {
-        String scheme = "jevApiKey";
+        String scheme = "apiKey";
         return new OpenAPI()
                 .info(new Info()
                         .title("Stock Decision Engine")
                         .version("1.0.0")
-                        .description("Returns BUY / SELL / HOLD from average purchase price and current price. "
-                                + "Fully offline - no external calls."))
+                        .description("Returns BUY / SELL / HOLD from average purchase price and current price, "
+                                + "optionally scored by Jev (TypeSafe AI) when TYPESAFE_API_KEY is set."))
                 .components(new Components().addSecuritySchemes(scheme, new SecurityScheme()
                         .type(SecurityScheme.Type.APIKEY)
                         .in(SecurityScheme.In.HEADER)

@@ -5,15 +5,29 @@ spring:
 server:
   port: 8080
 
-# API key comes ONLY from the environment variable JEV_API_KEY
-jev:
-  api-key: ${JEV_API_KEY:}
+# API key comes ONLY from the environment variable API_KEY
+app:
+  api-key: ${API_KEY:}
+
+# Jev (TypeSafe AI) evaluation. Optional: when TYPESAFE_API_KEY is unset the
+# service stays fully offline and jevEvaluation is null in responses.
+typesafe:
+  api-key: ${TYPESAFE_API_KEY:}
+  base-url: ${TYPESAFE_BASE_URL:https://api.typesafe.ai}
+  model: ${TYPESAFE_DEFAULT_MODEL:jev-latest}
+  timeout: 5s
 
 # Decision thresholds (percent). Override via env, e.g. DECISION_TAKE_PROFIT_PERCENT=25
 decision:
   take-profit-percent: 20
   stop-loss-percent: 15
   average-down-percent: 5
+
+# Jev logs: INFO = URL, status, latency, request id, scores, errors.
+# Set to DEBUG to also log the full request state and Jev's raw response body.
+logging:
+  level:
+    com.saurabh.stockdecision.jev: ${JEV_LOG_LEVEL:INFO}
 
 management:
   endpoints:

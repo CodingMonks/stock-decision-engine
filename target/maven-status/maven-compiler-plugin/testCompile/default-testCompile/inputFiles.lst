@@ -1,2 +1,7 @@
+/Users/saurabhchakote/Local/Technoration/services/stock-decision-engine/src/test/java/com/saurabh/stockdecision/api/DecisionControllerJevTest.java
 /Users/saurabhchakote/Local/Technoration/services/stock-decision-engine/src/test/java/com/saurabh/stockdecision/api/DecisionControllerTest.java
+/Users/saurabhchakote/Local/Technoration/services/stock-decision-engine/src/test/java/com/saurabh/stockdecision/jev/JevClientTest.java
+/Users/saurabhchakote/Local/Technoration/services/stock-decision-engine/src/test/java/com/saurabh/stockdecision/jev/JevConfigTest.java
+/Users/saurabhchakote/Local/Technoration/services/stock-decision-engine/src/test/java/com/saurabh/stockdecision/jev/JevHttpLoggerTest.java
+/Users/saurabhchakote/Local/Technoration/services/stock-decision-engine/src/test/java/com/saurabh/stockdecision/security/SecretRedactorTest.java
 /Users/saurabhchakote/Local/Technoration/services/stock-decision-engine/src/test/java/com/saurabh/stockdecision/service/DecisionServiceTest.java

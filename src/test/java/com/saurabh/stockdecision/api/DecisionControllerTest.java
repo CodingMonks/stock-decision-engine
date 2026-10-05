@@ -2,7 +2,7 @@ package com.saurabh.stockdecision.api;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
+import org.springframework.boot.webmvc.test.autoconfigure.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
@@ -12,7 +12,7 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
-@SpringBootTest(properties = "jev.api-key=test-key")
+@SpringBootTest(properties = "app.api-key=test-key")
 @AutoConfigureMockMvc
 class DecisionControllerTest {
 
@@ -30,7 +30,10 @@ class DecisionControllerTest {
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.stockName").value("AAPL"))
                 .andExpect(jsonPath("$.decision").value("SELL"))
-                .andExpect(jsonPath("$.changePercent").value(23.33));
+                .andExpect(jsonPath("$.changePercent").value(23.33))
+                .andExpect(jsonPath("$.poweredBy").value("Basic calculation"))
+                .andExpect(jsonPath("$.jevEvaluation").isEmpty())
+                .andExpect(jsonPath("$.jevError").isEmpty());
     }
 
     @Test

@@ -13,5 +13,5 @@ RUN addgroup -S app && adduser -S app -G app
 COPY --from=build /app/target/stock-decision-engine-*.jar app.jar
 USER app
 EXPOSE 8080
-# JEV_API_KEY must be supplied at runtime: docker run -e JEV_API_KEY=...
+# API_KEY must be supplied at runtime: docker run -e API_KEY=...
 ENTRYPOINT ["java", "-jar", "/app/app.jar"]
